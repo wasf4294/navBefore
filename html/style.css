@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+body    {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #222;
+
+    background-color: #272727;
+
+    /* 센터링 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #444444;
+}
+
+.gnb   {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(207, 207, 207, 0.507);
+    padding: 50px 30px;
+}
+.gnb li {
+    box-sizing: border-box;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+.gnb li a{
+    font-size: 14px;
+    position: relative;
+}
+.gnb li a:before{
+    content: '';
+    position: absolute;
+    background-color: rgb(49, 49, 49);
+    height: 1px;
+    width: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gnb li a:hover::before {
+    width: 100%;
+}
